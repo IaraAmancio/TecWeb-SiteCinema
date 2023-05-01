@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <meta name="description" content="Cinema Web Site">
+    <meta name="author" content="Iara Amancio">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Avatar: O Caminho da Água</h1>
+            <figure>
+                <img src="imagens/avatar.jpg" alt="Cartaz filme Avatar" width="270" height="400">
+                <figcaption>Fig 1 - Imagem do Avatar: O Caminho da Água</figcaption>
+            </figure><hr>
+            <p><b>Data de exibição:</b> 29.03.2023<br>
+                <b>Hora de exibição:</b> 36 horas<br>
+                <mark><b>Classificação:</b> 18 anos</mark><br>
+            </p>
+            <p>
+                <details>
+                    <summary><b>Sinopse</b></summary>
+                    <p>Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos. 
+                        No entanto, eles devem sair de casa e explorar as regiões de Pandora quando uma antiga ameaça ressurge, 
+                        e Jake deve travar uma guerra difícil contra os humanos.</p>
+                </details>
+            </p>    
+            <p><b>Duração do filme:</b> 3h e 12 min.</p>
+
+            <!--Exibição do trailer do filme-->
+            <p>
+                <p><b>Trailer do filme:</b></p>
+                <iframe 
+                    width="560" height="315" src="https://www.youtube.com/embed/fMdb0nGsICE" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </p><br>
+
+            <!--Trilha sonora do filme-->
+            <p>
+                <p><b>Trilha sonora: </b>Nothing is lost you give me strength</p>
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="audios/filme2/The-Weeknd-Nothing-Is-Lost-You-Give-Me-Strength-24Naijamuzic-com.mp3" type="audio/mp3">
+                    Seu navegador não suporta esse formato de áudio
+                </audio>
+            </p>
+            
+            
+            <p><b>Quantidade de vagas em cada seção: </b></p>
+            <label for="quant_secao_1">Seção 1:</label>
+            <meter id="quant_secao_1" value="0.8">80%</meter><br>         
+            <label for="quant_secao_2">Seção 2:</label>
+            <meter id="quant_secao_2" value="0.0">0%</meter><br>   
+            <label for="quant_secao_3">Seção 3:</label>
+            <meter id="quant_secao_3" value="0.5">50%</meter><br>
+            <label for="quant_secao_4">Seção 4:</label>
+            <meter id="quant_secao_4" value="0.4">40%</meter><br>
+
+            <dialog id="dialog1" open>
+                <p>Restrições para acesso a sala de exibição: <br>
+                    - Atenção ao fluxo e distanciamento social.<br>
+                    - Não é permitido a entrada com objetos pontiagudos.
+                </p>
+            
+            </dialog>
+        </article>
+ 
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscricao</title>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Formulário de inscrição</h1>
+
+            <!--Porcentagem(fictício) de conclusão do preenchimento do formulário-->
+            <label for="conclusao">Conclusão do formulário</label>
+            <progress id="conclusao" value="10" max="100">10%</progress>
+            <br></br>
+            <form action="inscricao.html" method="POST">
+                <div>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input id="nascimento" type="date" />
+                </div><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" />
+                </div><br>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" />
+                </div><br>
+                <div>
+                    <label for="mes_adesao">Mês de adesão:</label>
+                    <input id="mes_adesao" type="month">
+                </div><br>
+                <div>
+                    <label for="n_filmes_semanais">Número de filmes que você pretende ver semanalmente:</label>
+                    <select name="filmes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="cor">Cor de preferência para visualização da sua área do cliente:</label>
+                    <input id="cor" type="color">
+                </div><br>
+                <div>
+                    <label for="cupom_desconto">Data e hora que o cliente prefere utilizar o cupom de desconto da primeira compra: </label>
+                    <input id="cupom_desconto" type="datetime-local" value="2023-04-03T00:00" min="2023-04-02T00:00" max="2023-04-04T00:00">
+                </div><br>
+                <div>
+                    <label for="endereco">Endereço da sua página pessoal:</label>
+                    <input id="endereco" type="url" placeholder="https://example.com">
+                </div><br>
+
+                <div>
+                    <p>Preferência de gênero de filmes:</p>
+                    <div>
+                        <input type="range" id="acao" min="0" max="10" >
+                        <label for="acao">Ação</label>
+                    </div>
+                    <div>
+                        <input type="range" id="drama" min="0" max="10">
+                        <label for="drama">Drama</label>
+                    </div>
+                    <div>
+                        <input type="range" id="romance" min="0" max="10">
+                        <label for="romance">Romance</label>
+                    <div>
+                        <input type="range" id="comedia" min="0" max="10">
+                        <label for="comedia">Comédia</label>
+                    </div>
+                    <div>
+                        <input type="range" id="suspense" min="0" max="10">
+                        <label for="suspense">Suspense</label>
+                    </div>
+                    <div>
+                        <input type="range" id="terror" min="0" max="10">
+                        <label for="terror">Terror</label>
+                    </div>
+                    <div>
+                        <input type="range" id="ficcao" min="0" max="10">
+                        <label for="ficcao"> Ficção Científica</label>
+                    </div>                
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </article>
+    </main>
+    
+</body>
+</html>

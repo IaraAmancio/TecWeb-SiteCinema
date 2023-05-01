@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <meta name="description" content="Cinema Web Site">
+    <meta name="author" content="Iara Amancio">
+</head>
+<body>
+    <main>
+        <article>
+            <h1>Titanic</h1>
+            <figure>
+                <img src="imagens/titanic.jpg" alt="Cartaz filme Titanic" width="270" height="400" >
+                <figcaption>Fig 1 - Imagem do filme Titanic</figcaption>
+            </figure><hr>
+            <p><b>Data de exibição:</b> 30.03.2023<br>
+                <b>Hora de exibição:</b> 17 horas<br>
+                <mark><b>Classificação:</b> 18 anos</mark><br>
+            </p>
+            <p>
+                <details>
+                    <summary><b>Sinopse</b></summary>
+                    <p>Um artista pobre e uma jovem rica se conhecem e se apaixonam na fatídica jornada do Titanic, em 1912.
+                    Embora esteja noiva do arrogante herdeiro de uma siderúrgica, a jovem desafia sua família e amigos em busca do verdadeiro amor.</p>
+                </details>
+            </p>    
+            <p><b>Duração do filme:</b> 3h e 14 min.</p>
+
+            <!--Exibição do trailer do filme-->
+            <p>
+                <p><b>Trailer do filme:</b></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IH6_CA_ocqY" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </p><br>
+
+            <!--Trilha sonora do filme-->
+            <p>
+                <p><b>Trilha sonora: </b>My Heart Will Go On</p>
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="audios/filme1/Titanic-My-Heart-Will-Go-On-2.mp3" type="audio/mp3">
+                    Seu navegador não suporta esse formato de áudio
+                </audio>
+            </p>
+            
+            
+            <p><b>Quantidade de vagas em cada seção: </b></p>
+            <label for="quant_secao_1">Seção 1:</label>
+            <meter id="quant_secao_1" value="0.2">20%</meter><br>         
+            <label for="quant_secao_2">Seção 2:</label>
+            <meter id="quant_secao_2" value="0.7">70%</meter><br>   
+            <label for="quant_secao_3">Seção 3:</label>
+            <meter id="quant_secao_3" value="0.5">50%</meter><br>
+            <label for="quant_secao_4">Seção 4:</label>
+            <meter id="quant_secao_4" value="0.25">25%</meter><br>
+
+            <dialog id="dialog1" open>
+                <p>Restrições para acesso a sala de exibição: <br>
+                    - Atenção ao fluxo e distanciamento social.<br>
+                    - Não é permitido a entrada com objetos pontiagudos.
+                </p>
+            
+            </dialog>
+        </article>
+ 
+</body>
+</html>
